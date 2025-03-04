@@ -1,6 +1,6 @@
 # ReactJS Projects  
 
-This repository contains multiple **React.js applications**, demonstrating various frontend concepts such as authentication, state management, theming, and CRUD operations.  
+This repository contains multiple **React.js applications**, demonstrating various frontend concepts such as authentication, state management, theming, routing and CRUD operations.  
 
 ## 📌 Projects Included  
 
