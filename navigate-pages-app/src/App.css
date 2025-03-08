@@ -1,0 +1,140 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  min-height: 100vh;
+  color: #333;
+}
+
+/* App container */
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* App title */
+.app-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Navbar styles */
+.navbar {
+  background: #2c3e50;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.nav-list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background: #3498db;
+  color: #fff;
+}
+
+/* Page content styles */
+.page-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.page-content h1 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.page-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Button styles */
+.nav-button,
+.back-button,
+.next-button,
+.home-button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-button:hover,
+.back-button:hover,
+.next-button:hover,
+.home-button:hover {
+  background: #2980b9;
+}
+
+/* Error styles */
+.error {
+  background: #ffebee;
+  color: #c0392b;
+}
+
+.error h1 {
+  color: #c0392b;
+}
+
+/* Loading state */
+.page-content:empty::before {
+  content: 'Loading...';
+  font-size: 1.5rem;
+  color: #7f8c8d;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .page-content {
+    padding: 20px;
+  }
+
+  .page-content h1 {
+    font-size: 2rem;
+  }
+}
