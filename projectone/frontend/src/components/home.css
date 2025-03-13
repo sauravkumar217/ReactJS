@@ -1,0 +1,145 @@
+/* home.css */
+
+/* Default Light Mode */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #004F00; /* Green background for navbar */
+}
+
+.navbar .navbar-nav .nav-link {
+  color: white;
+  font-size: 16px;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #00FF00; /* Lighter green on hover */
+}
+
+.navbar .navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: #fff;
+}
+
+.dark-mode .navbar {
+  background-color: #1a1a1a;
+}
+
+.dark-mode .navbar .navbar-nav .nav-link {
+  color: #fff;
+}
+
+.dark-mode .navbar .navbar-nav .nav-link:hover {
+  color: #00FF00;
+}
+
+.dark-mode .container {
+  background-color: #1c1c1c;
+  color: #ccc;
+}
+
+.dark-mode .card {
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #444;
+}
+
+.dark-mode .card .card-title {
+  color: #fff;
+}
+
+.dark-mode .btn {
+  color: white;
+}
+
+.dark-mode .btn-outline-light {
+  border-color: #fff;
+}
+
+/* Card Styling */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-img-top {
+  border-radius: 10px;
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 14px;
+  color: #666;
+}
+
+.card .btn {
+  background-color: #004F00;
+  color: white;
+}
+
+.card .btn:hover {
+  background-color: #006600;
+}
+
+/* Search Bar */
+input[type="text"] {
+  border-radius: 25px;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+  border-color: #004F00;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar .navbar-nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .row .col-md-4 {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,149 @@
+/* Order.css */
+
+/* General styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.order-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.order-title {
+  font-size: 32px;
+  font-weight: 600;
+  color: #004F00;
+}
+
+.empty-cart {
+  font-size: 18px;
+  color: #999;
+}
+
+.order-items {
+  margin-top: 20px;
+}
+
+.order-item {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.order-img {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+
+.order-details {
+  flex: 1;
+}
+
+.order-item-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.order-item-description {
+  font-size: 14px;
+  color: #777;
+}
+
+.order-item-price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.quantity-selector {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.quantity-btn {
+  padding: 5px 10px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #004F00;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quantity-btn:hover {
+  background-color: #006600;
+}
+
+.quantity-display {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.order-summary {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.total-amount {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.place-order-btn {
+  padding: 10px 20px;
+  background-color: #004F00;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.place-order-btn:hover {
+  background-color: #006600;
+}
+
+.order-status {
+  font-size: 16px;
+  margin-top: 15px;
+  text-align: center;
+  color: #f44336;
+}
+
+@media (max-width: 768px) {
+  .order-container {
+    padding: 15px;
+  }
+
+  .order-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .order-img {
+    margin-bottom: 15px;
+  }
+
+  .order-details {
+    width: 100%;
+  }
+}
