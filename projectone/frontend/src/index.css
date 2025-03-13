@@ -1,0 +1,95 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f9fa; /* Light gray background */
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Navbar Styling */
+.navbar {
+  background: #1e3a5f; /* Deep Blue */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #cce7ff; /* Light Blue Hover */
+}
+
+/* Page Container */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Styling */
+button {
+  background: #2c6e91; /* Soft Blue */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #1b4d6e; /* Darker Blue */
+  transform: scale(1.05);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #1e3a5f, #2c6e91); /* Gradient for Premium Look */
+  color: white;
+  border-radius: 8px;
+}
+
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  margin-top: 20px;
+}
+
+.cta-buttons .btn {
+  background: #2c6e91;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.cta-buttons .btn:hover {
+  background: #1b4d6e;
+}
